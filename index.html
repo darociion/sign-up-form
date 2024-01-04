@@ -22,26 +22,29 @@
                 Sign up <em>now</em> to get started. <br>
                 You <em>know</em> you want to.
             </p>
-            <form action="#" method="get">
+            <form action="#" method="get" onsubmit="return matchPasswords()">
                 <div class="form">
-                    <p>Let's do this!</p>
+                    <p class="title">Let's do this!</p>
                     <div class="input">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="First Name" >
+                        <input type="text" placeholder="Last Name" >
                     </div>
                     <div class="input">
-                        <input type="email" placeholder="Email">
-                        <input type="number" placeholder="Phone">
+                        <input type="email" placeholder="Email" >
+                        <input type="number" placeholder="Phone" >
                     </div>
                     <div class="input">
-                        <input type="password" placeholder="Password">
-                        <input type="password" placeholder="Confirm Password">
+                        <input class="pass1" type="password" placeholder="Password" >
+                        <input class="pass2" type="password" placeholder="Confirm Password" >
+                        <p class="error-message"></p>
                     </div>
                     </div>
                 <button type="submit">Create Account</button>
             </form>
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <p class="login">Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

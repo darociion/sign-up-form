@@ -9,7 +9,8 @@
 body {
     background-color: #f5f6f7;
     font-family: "Helvetica Neue", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.7);
 }
 
 h1 {
@@ -52,10 +53,9 @@ img {
 }
 
 .logo {
-    background-color: #000;
+    background-color: rgb(0, 0, 0, 0.7);
     font-family: "Norse", sans-serif;
     color: #fff;
-    opacity: 0.7;
     width: 100%;
     height: 20%;
     display: flex;
@@ -94,6 +94,12 @@ img {
     }
 }
 
+.login {
+    position: relative;
+    left: -30%;
+    margin: 0 !important;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -101,21 +107,44 @@ form {
     justify-content: center;
     width: 118%;
     z-index: 1;
-    > input {
-        margin: 1rem;
-        padding: 0.3rem;
-    }
+}
 
-    > p {
-        position: relative;
-        left: -30%;
-    }
+input {
+    margin: 0.5rem;
+    padding: 1.2rem;
+    border-radius: 0.7rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    width: 35%;
+    border: #E5E7EB 1px solid;
+}
+
+input:focus {
+    outline: none;
+    border: rgb(5, 5, 141) 1px solid;
+    box-shadow: 2px 5px 8px 0 rgb(0, 0, 0, 0.2);
+}
+
+.error {
+    border: red 1px solid;
+}
+
+.error-message {
+    color: red;
+    margin-left: 1%;
 }
 
 .form {
     background-color: #fff;
     width: 100%;
     padding: 3rem;
+    box-shadow: 2px 5px 8px 0 rgb(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 1.7rem;
+    position: relative;
+    top: -10%;
 }
 
 button {
