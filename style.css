@@ -35,6 +35,7 @@ img {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -45,6 +46,7 @@ img {
     width: 40%;
     height: 100%;
     display: flex;
+    flex: 40%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -80,8 +82,8 @@ img {
 .main {
     background-color: #f5f6f7;
     width: 55%;
-    height: 100%;
     display: flex;
+    flex: 60%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -95,8 +97,6 @@ img {
 }
 
 .login {
-    position: relative;
-    left: -30%;
     margin: 0 !important;
 }
 
@@ -105,8 +105,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 118%;
-    z-index: 1;
+    width: 100%;
 }
 
 input {
@@ -155,11 +154,13 @@ button {
     color: white;
     height: 3.5rem;
     font-size: 1.4rem;
-    position: relative;
-    left: -30%;
     background-color: #596D48;
 }
 
-
+@media (max-width: 950px) {
+    .sidebar, .main {
+      flex: 100%;
+    }
+}
 
 
