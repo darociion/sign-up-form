@@ -23,7 +23,7 @@ p {
 }
 
 a {
-    color: #596D48;
+    color: #760A17;
     text-decoration: none;
 }
 
@@ -51,7 +51,7 @@ img {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: round;
 }
 
 .logo {
@@ -128,9 +128,10 @@ input:focus, input:active {
     border: red 1px solid;
 }
 
-.error-message {
+.errorMessage {
     color: red;
     margin-left: 1%;
+    visibility: hidden;
 }
 
 .form {
@@ -148,18 +149,22 @@ input:focus, input:active {
 
 button {
     margin: 1rem;
-    padding: 1.2rem;
     border-radius: 1.2rem;
     width: 15rem;
     color: white;
     height: 3.5rem;
     font-size: 1.4rem;
-    background-color: #596D48;
+    background-color: #760A17;
+    cursor: pointer;
+    box-shadow: 2px 5px 8px 0 rgb(0, 0, 0, 0.2);
 }
 
 @media (max-width: 950px) {
     .sidebar, .main {
       flex: 100%;
+    }
+    .sidebar {
+        background-repeat: no-repeat;
     }
 }
 
